@@ -1,7 +1,6 @@
 import { useState } from "react";
 import "./App.css";
 import Form from "./components/Form";
-import { comment } from "postcss";
 
 function App() {
   const [formData, setFormData] = useState({
@@ -13,14 +12,14 @@ function App() {
     city: "",
     state: "",
     zipCode: "",
-    comments:false,
-    candidates:false,
-    offers:false,
-    notifications:'',
+    comments: false,
+    candidates: false,
+    offers: false,
+    notifications: "",
   });
 
   return (
-    <div>
+    <div className="w-screen h-screen overflow-x-hidden">
       <Form formData={formData} setFormData={setFormData} />
     </div>
   );
